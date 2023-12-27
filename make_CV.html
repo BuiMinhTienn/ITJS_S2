@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styleUser.css">
+        <title>IT-JS</title>
+    </head>
+    <body>
+        <h1>Tạo CV của bạn</h1>
+        <div class="container">
+            <form action="/post-CV.vn" method="post">
+                <div class="form-group">
+                    <label for="username">Họ tên</label>
+                    <input type="text" class="form-control" name="username" id="username" placeholder="ex: Bùi Minh Tiến" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Giới tính</label>
+                    <input type="radio" name="gender" value="male">
+                    <label for="male">Nam</label>
+                    <input type="radio" name="gender" value="female">
+                    <label for="female">Nữ</label>
+                </div>
+                <div class="form-group">
+                    <label for="birthday">Ngày sinh</label>
+                    <input type="date" class="form-control" name="birthday" id="birthday" placeholder="ex: 11/10/2001" required>
+                </div>
+                <div class="form-group">
+                    <label for="sdt">SĐT</label>
+                    <input type="number" class="form-control" name="sdt" id="sdt" pattern="[0-9]{10}" placeholder="ex: 0987654321" required>
+                </div>
+                <div class="form-group">
+                    <label for="em">Email</label>
+                    <input type="email" class="form-control" name="em" id="em" placeholder="ex: mt156@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Địa chỉ</label>
+                    <input type="text" class="form-control" name="address" id="address" placeholder="ex: Thanh Xuân - Hà Nội" required>
+                </div>
+                <div class="form-group">
+                    <label for="university">Tên trường hoặc cơ sở đào tạo chính quy</label>
+                    <input type="text" class="form-control" name="university" id="university" placeholder="ex: Đại học Thủy Lợi" required>
+                </div>
+                <div class="form-group">
+                    <label for="from">Từ</label>
+                    <input type="date" id="from" name="from" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="to">Đến</label>
+                    <input type="date" id="to" name="to" class="form-control">
+                </div> 
+                <div class="form-group">
+                    <label for="sub">Ngành học</label>
+                    <input type="text" class="form-control" name="sub" id="sub" placeholder="ex: Hệ thống thông tin" required>
+                </div>
+                <div class="form-group">
+                    <label for="levels">Tốt nghiệp loại</label>
+                    <select class="form-option" id="levels">
+                        <option value="Xuất sắc">Xuất sắc</option>
+                        <option value="Trung bình">Trung bình</option>
+                        <option value="Khá">Khá</option>
+                        <option value="Giỏi">Giỏi</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="skills">Kỹ năng</label>
+                    <input type="text" class="form-control" name="skills" id="skills" placeholder="ex: C++, PHP, Java, NodeJs, Bootstrap,..." required>
+                </div>
+                <div class="form-group">
+                    <label for="project">Dự án đã làm</label>
+                    <input type="text" class="form-control" name="project" id="project" placeholder="ex: Nền tảng tìm kiếm việc làm IT-JS">
+                </div>
+                <div class="form-group">
+                    <label for="introduce">Giới thiệu bản thân</label>
+                    <textarea name="introduce" id="introduce" cols="30" rows="5"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Lưu CV</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

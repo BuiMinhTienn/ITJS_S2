@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IT-JS</title>
+  <link rel="stylesheet" href="styleAdmin.css">
+</head>
+<body>
+  <main class="container">
+    <section class="jobs">
+      <h1>Danh sách bài viết tháng 12/ 2023</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Ngành nghề</th>
+            <th>Loại hình</th>
+            <th>Địa điểm</th>
+            <th>Trạng thái</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Kỹ sư phần mềm</td>
+            <td>Full-time</td>
+            <td>Hà Nội</td>
+            <td>Chờ duyệt</td>
+            <td>
+              <a href="notification.html">Duyệt</a>
+              <a href="delete.html">Xóa</a>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Quản trị viên hệ thống</td>
+            <td>Remote</td>
+            <td>Thái bình</td>
+            <td>Đã duyệt</td>
+            <td>
+              <a href="#">Xem chi tiết</a>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Lập trình nhúng</td>
+            <td>Part-time</td>
+            <td>Hồ Chí Minh</td>
+            <td>Chờ duyệt</td>
+            <td>
+              <a href="notification.html">Duyệt</a>
+              <a href="delete.html">Xóa</a>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Kỹ sư cầu nối</td>
+            <td>Full-time</td>
+            <td>Đà Nẵng</td>
+            <td>Đã xóa</td>
+            <td>
+              <a href="#">Xem chi tiết</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="filters">
+      <h2>Lọc bài viết</h2>
+      <form action="#">
+        <input type="text" placeholder="Tìm kiếm">
+        <select name="industry">
+          <option value="">Tất cả trạng thái</option>
+          <option value="kinh doanh">Chờ duyệt</option>
+          <option value="công nghệ">Đã duyệt</option>
+        </select>
+        <div>
+            <button type="submit" class="btn btn-primary">Lọc</button>
+        </div>
+      </form>
+    </section>
+    <section class="statistics">
+      <h2>Thống kê tháng 12/2023</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tiêu đề</th>
+            <th>Giá trị</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tổng số bài viết</td>
+            <td>107</td>
+          </tr>
+          <tr>
+            <td>Số bài viết chờ duyệt</td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>Số bài viết đã duyệt</td>
+            <td>80</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
